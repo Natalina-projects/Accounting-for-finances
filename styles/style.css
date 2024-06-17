@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('fonts/Roboto-Regular.ttf') format('ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('fonts/Roboto-Medium.ttf') format('ttf');
+    font-weight: 500;
+}
+
+
+body {
+    background-color: white;
+    font-family: "Roboto-Regular", sans-serif;
+}
+
+.layout {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+.sidebar {
+    max-width: 219px;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    min-height: 1024px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    color: rgb(5, 44, 101);
+    box-sizing: border-box;
+}
+
+.sidebar-header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.logo {
+    width: 138px;
+    height: 40px;
+    text-align: center;
+}
+
+.sidebar-nav {
+    min-height: 800px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 60px;
+    padding: 0 20px;
+
+}
+
+.sidebar-nav .category-btn {
+    font-size: 14px;
+    color: rgb(5, 44, 101);
+}
+
+.category-btn::after {
+    content: ">";
+    width: 10px;
+    height: auto;
+    margin-left: 71px ;
+}
+
+.btn-toggle-nav li{
+    margin-left: 11px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.sidebar-balance {
+    padding: 20px;
+}
+
+.sidebar-user {
+    margin-top: auto;
+    border-top: 1px solid lightgray;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    border-top: 1px solid lightgray;
+    color: rgb(5, 44, 101);
+}
+
+.header {
+    padding-top: 100px;
+}
+
+.header-title {
+    color: rgb(5, 44, 101);
+    font-size: 40px;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-weight: 500;
+    line-height: 47px;
+    margin-bottom: 60px;
+}
+
+.header-nav {
+    gap: 20px;
+}
+
+.header-nav .nav-item a {
+    width: 100px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(108, 117, 125);
+    border-radius: 4px;
+    color: rgb(108, 117, 125);
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.header-nav .nav-item .active {
+    background: rgb(108, 117, 125);
+    border-radius: 4px;
+}
+
+
+
+
+
+
