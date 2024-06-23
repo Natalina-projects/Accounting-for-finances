@@ -2,42 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Главная</title>
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Редактирование категории доходов</title>
 </head>
 
 <body>
 <div class="layout">
     <div class="sidebar d-flex flex-column flex-shrink-0">
         <div class="sidebar-header">
-            <a href="index.html"
+            <a href="../index.html"
                class="logo-link w-100 d-flex justify-content-center align-items-center me-md-auto text-decoration-none">
-                <img class="logo" src="images/logo.png" alt="Логотип">
+                <img class="logo" src="../images/logo.png" alt="Логотип">
             </a>
         </div>
         <div class="sidebar-nav d-flex flex-column">
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="index.html" class="gap-1 nav-link active d-flex align-items-center" aria-current="page">
+                    <a href="../index.html" class="gap-1 nav-link d-flex align-items-center home-link" aria-current="page">
                         <svg width="15.000000" height="13.792892" viewBox="0 0 15 13.7929" fill="none"
-                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                             xmlns="http://www.w3.org/2000/svg">
                             <desc>
                                 Created with Pixso.
                             </desc>
                             <defs/>
                             <path id="Vector"
                                   d="M8.2 0.29C7.81 -0.1 7.18 -0.1 6.79 0.29L0.14 6.93C-0.05 7.13 -0.05 7.45 0.14 7.64C0.34 7.84 0.65 7.84 0.85 7.64L1.5 7L1.5 12.29C1.5 13.12 2.17 13.79 3 13.79L12 13.79C12.82 13.79 13.5 13.12 13.5 12.29L13.5 7L14.14 7.64C14.34 7.84 14.65 7.84 14.85 7.64C15.04 7.45 15.04 7.13 14.85 6.93L12.5 4.58L12.5 1.29C12.5 1.01 12.27 0.79 12 0.79L11 0.79C10.72 0.79 10.5 1.01 10.5 1.29L10.5 2.58L8.2 0.29ZM12.5 6L7.5 1L2.5 6L2.5 12.29C2.5 12.56 2.72 12.79 3 12.79L12 12.79C12.27 12.79 12.5 12.56 12.5 12.29L12.5 6Z"
-                                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                                  fill-opacity="1.000000" fill-rule="evenodd"/>
                         </svg>
                         Главная
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="templates/incomes-expenses.html" class="d-flex align-items-center gap-1 nav-link">
+                    <a href="incomes-expenses.html" class="d-flex align-items-center gap-1 nav-link">
                         <svg width="16.000000" height="16.000000" viewBox="0 0 16 16" fill="none"
-                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                             xmlns="http://www.w3.org/2000/svg" >
                             <desc>
                                 Created with Pixso.
                             </desc>
@@ -56,9 +55,8 @@
                     </button>
                     <div class="collapse" id="home-collapse" style="">
                         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="templates/incomes.html"
-                                   class="link-dark d-inline-flex text-decoration-none rounded">Доходы</a></li>
-                            <li><a href="templates/expenses.html" class="link-dark d-inline-flex text-decoration-none rounded">Расходы</a>
+                            <li><a href="incomes.html" class="link-dark d-inline-flex text-decoration-none rounded">Доходы</a></li>
+                            <li><a href="expenses.html" class="link-dark d-inline-flex text-decoration-none rounded">Расходы</a>
                             </li>
                         </ul>
                     </div>
@@ -69,43 +67,24 @@
         <div class="sidebar-user">
             <a href="#" class="d-flex align-items-center text-decoration-none" data-bs-toggle="dropdown"
                aria-expanded="false">
-                <img src="images/user.png" alt="Фото пользователя" width="36" height="36" class="rounded-circle me-2">
+                <img src="../images/user.png" alt="Фото пользователя" width="32" height="32"
+                     class="rounded-circle me-2">
                 <span>RomanChernov</span>
             </a>
         </div>
     </div>
     <div class="content">
-        <h1 class="content-title">Главная</h1>
-        <ul class="header-nav nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link active">Сегодня</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Неделя</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Месяц</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Год</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Все</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Интервал</a></li>
-            <li class="nav-item d-flex justify-content-center gap-2">c<a href="#" class="nav-link border-0">Дата</a>
-            </li>
-            <li class="nav-item d-flex justify-content-center gap-2">по<a href="#" class="nav-link border-0">Дата</a>
-            </li>
-        </ul>
-        <section class="main">
-            <div class="main-chart">
-                <h2>Доходы</h2>
-                <canvas id="pie-chart" width="576" height="476"
-                        style="display: block; box-sizing: border-box; height: 573px; width: 573px;"></canvas>
-            </div>
-            <div class="main-chart">
-                <h2>Расходы</h2>
-                <canvas id="pie-chart2" width="576" height="476"
-                        style="display: block; box-sizing: border-box; height: 573px; width: 573px;"></canvas>
-            </div>
-        </section>
+        <h1 class="content-title">Редактирование категории доходов</h1>
+        <div class="form">
+            <input type="text" class="name" placeholder="Название...">
+        </div>
+        <div class="actions-btn">
+            <a href="#" class="btn btn-success">Сохранить</a>
+            <a href="#" class="btn btn-danger deleteBtn">Отмена</a>
+        </div>
     </div>
 </div>
-
-<script src="scripts/jquery-3.7.1.min.js"></script>
-<script src="scripts/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="scripts/script.js"></script>
+<script src="../scripts/jquery-3.7.1.min.js"></script>
+<script src="../scripts/bootstrap.min.js"></script>
 </body>
 </html>
